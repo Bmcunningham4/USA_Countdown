@@ -20,7 +20,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   overflow: auto; /* ! (same as scroll basically) This is pretty clutch and a lifesaver! */
-  /* font-family: "Roboto", sans-serif; */
+  font-family: "Roboto", sans-serif;
 }
 
 /* Main header */
@@ -32,6 +32,7 @@ header {
 }
 
 .header-title {
+  font-family: "Kay Pho Du", serif;
   font-size: 4.375rem;
   margin: 0;
   padding: 3.125rem;
@@ -57,7 +58,7 @@ header {
   align-items: center;
   justify-content: center;
   gap: 3.75rem;
-  margin-bottom: 3.75rem;
+    margin: 0;
 }
 
 .countdown {
@@ -72,6 +73,7 @@ header {
 }
 
 .countdown-header {
+    font-family: "Lato", sans-serif;
   font-size: 2.5rem;
   font-weight: bold;
   text-align: center;
@@ -88,6 +90,7 @@ header {
   display: flex;
   justify-content: center;
   gap: 1.25rem; /* Adjust spacing between counter items */
+    margin-bottom: 1.8rem;
 }
 
 .counter-item {
@@ -98,7 +101,7 @@ header {
 
 .counter-item h1 {
   font-size: 3rem; /* Adjust number size */
-  margin-bottom: 5px; /* Reduce space between number and label */
+  margin-bottom: 0.3125rem; /* Reduce space between number and label */
 }
 
 .labels-div {
@@ -107,12 +110,11 @@ header {
 }
 
 /* Smaller h2 and move to bottom-right corner */
-.countdown h2 {
+.date-h2 {
   font-size: 0.875rem;
   position: absolute;
   bottom: 0.625rem;
   right: 1.25rem;
-  margin: 0;
   text-align: right;
 }
 

@@ -1,0 +1,37 @@
+/* date-h2 centered for phone and to right for laptop = yew  */
+
+/* Ipad width */
+@media only screen and (max-width: 900px) {
+    html, body {
+        font-size: 12px;
+    }
+
+    
+
+    .date-h2 {
+        text-align: center;
+        position: static;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .counter-div {
+        padding: 1rem;
+        margin: 0;
+    }
+}
+
+
+/* Iphone width */
+
+@media only screen and (max-width: 600px) {
+    html, body {
+        font-size: 8px;
+    }
+
+   
+    .all-countdowns {
+        margin-bottom: 3rem;
+    }
+}
