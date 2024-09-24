@@ -116,35 +116,17 @@ header {
   text-align: right;
 }
 
-#days-1 {
+
+
+/*? Changed this to a class, idiot.. */
+.red-team {
   color: red;
 }
-#hours-1 {
+.white-team {
 color: white;
 }
-#minutes-1 {
+.blue-team {
 color: blue;
 }
 
-
-#days-2 {
-    color: red;
-}
-#hours-2 {
-color: white;
-}
-#minutes-2 {
-color: blue;
-}
-
-
-#days-3 {
-    color: red;
-}
-#hours-3 {
-color: white;
-}
-#minutes-3 {
-color: blue;
-}
 
