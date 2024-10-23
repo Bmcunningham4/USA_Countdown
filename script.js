@@ -1,6 +1,6 @@
 const countdowns = [
     {
-        date: new Date("October 31, 2024 13:10:00").getTime(),
+        date: new Date("October 31, 2024 01:10:00").getTime(),
         ids: {
             days: "days-1",
             hours: "hours-1",
@@ -10,7 +10,7 @@ const countdowns = [
         }
     },
     {
-        date: new Date("October 31, 2024 13:10:01").getTime(),
+        date: new Date("October 31, 2024 01:10:01").getTime(),
         ids: {
             days: "days-2",
             hours: "hours-2",
