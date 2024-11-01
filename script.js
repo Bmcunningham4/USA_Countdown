@@ -82,10 +82,9 @@ const countdowns = [
 ];
 
 
-function updateCountdowns() {
-    const now = new Date().getTime();
-
-    countdowns.forEach((countdown) => {
+countdowns.forEach((countdown) => {
+    function updateCountdown() {
+        const now = new Date().getTime();
         const timeRemaining = countdown.date - now;
 
         if (timeRemaining > 0) {
@@ -105,9 +104,13 @@ function updateCountdowns() {
             document.getElementById(countdown.ids.minutes).innerHTML = "0";
             document.getElementById(countdown.ids.seconds).innerHTML = "0";
             document.getElementById(countdown.ids.timer).innerHTML = "Event has started!";
-        }
-    });
-}
 
-// Update all countdowns every second
-setInterval(updateCountdowns, 1000);
+            // Clear this countdown's interval
+            clearInterval(countdown.interval);
+        }
+    }
+
+    // Set a unique interval for each countdown
+    countdown.interval = setInterval(updateCountdown, 1000);
+});
+
